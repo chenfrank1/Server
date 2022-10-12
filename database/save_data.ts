@@ -14,7 +14,7 @@ export let saveToDB = async(data:PullRequestDetails) => {
   catch(e)
   {
     console.log(e)
-    return true;
+    return false;
   }
   finally{
     await client.end();
